@@ -9,6 +9,7 @@ export type Project = {
   access: ProjectAccess;
   github?: string;
   summary: string;
+  keyAchievement: string;
   techStack: string[];
   problem: string;
   architectureDiagram: string;
@@ -28,7 +29,8 @@ export const projects: Project[] = [
     access: "public",
     github: "https://github.com/Diconai-2team/SenSa",
     summary:
-      "가스·전력 센서와 작업자 위치를 1초 주기로 수집해 위험을 판정하고, 실시간 관제 화면과 Discord로 즉시 경보하며, 가스 누출 시 물리 모델 기반 동적 위험구역이 자동 생성·확산·승격·만료되는 산업안전 백엔드 플랫폼",
+      "산업 현장의 센서 데이터를 실시간으로 수집·분석해 위험을 판정하고, 관제 화면과 알림 시스템으로 즉시 전달하는 통합 안전 모니터링 플랫폼",
+    keyAchievement: "1초 단위 실시간 데이터 처리와 Kubernetes 3 Pod 환경 정합성 검증",
     techStack: [
       "Django",
       "Django REST Framework",
@@ -122,6 +124,7 @@ Discord 외부 알림 (Celery 비동기)`,
     access: "private",
     summary:
       "YOLOv5 파인튜닝 기반 객체 인식과 멀티모달 거리 추정을 결합해, 보행자·차량·노인·어린이·성인 등 유형별 충돌 위험도에 따라 모빌리티 행동을 차등 제어하는 경로예측 알고리즘. 논문 작성 및 캡스톤 디자인 경연대회 학교장 우수상 수상",
+    keyAchievement: "YOLOv5 파인튜닝 기반 객체 인식과 통계 기반 충돌 위험 판단 알고리즘 설계",
     techStack: ["Python", "YOLOv5", "Multimodal Distance Estimation", "Kalman Filter"],
     problem:
       "단순 객체 탐지만으로는 보행자, 차량, 노인, 어린이, 성인 등 다양한 유형의 대상이 앞으로 어떻게 움직여 충돌로 이어질지 판단하기 어려웠습니다. 유형에 따라 이동 속도와 예측 가능한 행동 패턴, 반응까지 필요한 여유 시간이 다르기 때문에, 이를 구분해서 판단하는 알고리즘이 필요했습니다.",
@@ -192,6 +195,7 @@ Kalman Filter 기반 데이터 정제
     access: "private",
     summary:
       "150개 남짓의 실험 데이터로는 학습이 불가능했던 인장강도 예측 문제를, GAN 기반 데이터 생성과 시뮬레이터 반복 검증으로 해결한 산학협력 프로젝트",
+    keyAchievement: "GAN 기반 데이터 증강으로 4년간 해결하지 못한 데이터 부족 문제 해결",
     techStack: ["Python", "GAN", "Deep Learning", "Simulator"],
     problem:
       "실험을 통해 얻을 수 있는 인장강도 데이터가 150개 정도로 극히 적었습니다. 사수님과 함께 약 2개월간 기존 방식의 예측 모델을 다양하게 시도했지만, 데이터 자체가 부족해 유의미한 결과가 나오지 않았습니다. 이 문제는 세우 기업이 4년 동안 사내에서도 해결하지 못한 과제였습니다.",
@@ -262,6 +266,7 @@ Kalman Filter 기반 데이터 정제
     access: "private",
     summary:
       "기업의 실무 요구와 산학협력단의 학습 평가 요구, 서로 다른 두 이해관계자의 요구사항을 동시에 조율하며 이끈 산학협력 웹 서비스 프로젝트",
+    keyAchievement: "기업과 산학협력단, 서로 다른 두 이해관계자의 요구사항을 동시에 조율",
     techStack: ["Java", "Spring", "JSP", "MyBatis", "Docker", "Git", "Notion", "DataGrip"],
     problem:
       "팀장으로서 성격이 다른 두 이해관계자의 요구사항을 동시에 충족시켜야 했습니다. 기업은 실제 서비스에 반영될 디자인 수정과 기능 개선을 원했고, 산학협력단은 학생 프로젝트로서 SWOT 분석, DB 스키마 분석, Notion을 통한 개발사항 공유 같은 프로세스와 학습 산출물을 요구했습니다. 이 두 요구를 하나의 일정 안에서 함께 만족시키는 것이 관건이었습니다.",

@@ -95,7 +95,11 @@ export default function Home() {
                     {group.items.map((item) => (
                       <span
                         key={item}
-                        className="border border-line px-2.5 py-1 text-sm transition-colors hover:border-signal hover:bg-signal-soft"
+                        className={
+                          item === "Python"
+                            ? "border border-signal bg-signal-soft px-2.5 py-1 text-sm font-medium text-ink transition-colors"
+                            : "border border-line px-2.5 py-1 text-sm transition-colors hover:border-signal hover:bg-signal-soft"
+                        }
                       >
                         {item}
                       </span>

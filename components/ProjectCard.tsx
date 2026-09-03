@@ -37,9 +37,17 @@ export default function ProjectCard({
           {project.title}
         </h3>
         <p className="mt-1 text-sm text-muted">{project.englishTitle}</p>
-        <p className="mt-4 text-sm leading-relaxed text-ink/80">
+        <p className="mt-4 break-keep text-sm leading-relaxed text-ink/80">
           {project.summary}
         </p>
+        <p className="mt-3 break-keep border-l-2 border-signal pl-3 text-sm font-medium text-ink">
+          {project.keyAchievement}
+        </p>
+        <div className="mt-4 flex flex-wrap gap-x-4 gap-y-1 text-xs text-muted">
+          {project.contribution.slice(0, featured ? 4 : 3).map((item) => (
+            <span key={item.title}>· {item.title}</span>
+          ))}
+        </div>
       </div>
       <div className="mt-6 flex flex-wrap gap-2">
         {project.techStack.slice(0, featured ? 8 : 4).map((tech) => (
