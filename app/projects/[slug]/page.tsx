@@ -32,7 +32,7 @@ export default async function ProjectDetail({
         <h1 className="text-3xl font-semibold tracking-tight md:text-4xl">{project.title}</h1>
         <p className="mt-2 text-base text-muted">{project.englishTitle}</p>
         {project.period && <p className="mt-1 text-sm text-muted">{project.period}</p>}
-        <p className="mt-6 max-w-xl text-base leading-relaxed text-ink/85">{project.summary}</p>
+        <p className="mt-6 max-w-xl break-keep text-base leading-relaxed text-ink/85">{project.summary}</p>
 
         <div className="mt-6 flex flex-wrap gap-2">
           {project.techStack.map((tech) => (
@@ -54,7 +54,7 @@ export default async function ProjectDetail({
         )}
 
         {project.access === "private" && (
-          <p className="mt-8 border border-line bg-paper-raised px-4 py-3 text-sm text-muted">
+          <p className="mt-8 break-keep border border-line bg-paper-raised px-4 py-3 text-sm text-muted">
             일부 데이터 및 소스코드는 보안 정책상 공개하지 않습니다.
           </p>
         )}
@@ -65,7 +65,7 @@ export default async function ProjectDetail({
               <span className="text-sm text-muted">01</span>
               Problem
             </h2>
-            <p className="mt-4 max-w-xl text-base leading-relaxed text-ink/85">{project.problem}</p>
+            <p className="mt-4 max-w-xl break-keep text-base leading-relaxed text-ink/85">{project.problem}</p>
           </div>
 
           <div>
@@ -76,7 +76,7 @@ export default async function ProjectDetail({
             <pre className="mt-4 overflow-x-auto border border-line bg-paper-raised p-4 font-mono text-xs leading-relaxed text-ink/90">
 {project.architectureDiagram}
             </pre>
-            <p className="mt-4 max-w-xl text-base leading-relaxed text-ink/85">
+            <p className="mt-4 max-w-xl break-keep text-base leading-relaxed text-ink/85">
               {project.architectureNote}
             </p>
           </div>
@@ -90,7 +90,7 @@ export default async function ProjectDetail({
               {project.contribution.map((item) => (
                 <div key={item.title}>
                   <h3 className="font-medium">{item.title}</h3>
-                  <p className="mt-1 max-w-xl text-sm leading-relaxed text-muted">
+                  <p className="mt-1 max-w-xl break-keep text-sm leading-relaxed text-muted">
                     {item.description}
                   </p>
                 </div>
@@ -107,7 +107,7 @@ export default async function ProjectDetail({
               {project.challenges.map((c) => (
                 <div key={c.title} className="border-l-2 border-alert pl-4">
                   <h3 className="font-medium">{c.title}</h3>
-                  <p className="mt-1 max-w-xl text-sm leading-relaxed text-muted">
+                  <p className="mt-1 max-w-xl break-keep text-sm leading-relaxed text-muted">
                     {c.description}
                   </p>
                 </div>
@@ -122,7 +122,7 @@ export default async function ProjectDetail({
             </h2>
             <ul className="mt-4 space-y-2">
               {project.result.map((r) => (
-                <li key={r} className="flex gap-3 text-sm leading-relaxed">
+                <li key={r} className="flex gap-3 break-keep text-sm leading-relaxed">
                   <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-signal" />
                   {r}
                 </li>

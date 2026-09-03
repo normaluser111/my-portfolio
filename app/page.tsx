@@ -40,10 +40,10 @@ export default function Home() {
               strokeLinejoin="round"
             />
           </svg>
-          <h1 className="max-w-2xl text-4xl font-semibold leading-[1.15] tracking-tight md:text-5xl">
+          <h1 className="max-w-2xl break-keep text-4xl font-semibold leading-[1.3] tracking-tight md:text-5xl">
             AI 모델과 데이터를 활용해 실제 문제를 해결하는 AI {"&"} Backend Developer 김재승입니다.
           </h1>
-          <p className="mt-6 max-w-xl text-base leading-relaxed text-muted md:text-lg">
+          <p className="mt-6 max-w-xl break-keep text-base leading-relaxed text-muted md:text-lg">
             문제가 발생하면 기존 해결 방법을 먼저 탐색하고, 적합한 모델을 조사해 실험을 통해 답을
             찾아갑니다. 그 과정에서 얻은 데이터를 분석해 다시 개선합니다.
           </p>
@@ -67,7 +67,7 @@ export default function Home() {
           <div className="mx-auto grid max-w-4xl gap-10 px-6 py-16 md:grid-cols-[1.2fr_1fr] md:py-20">
             <div>
               <h2 className="text-xl font-semibold tracking-tight">About</h2>
-              <p className="mt-5 max-w-md text-base leading-relaxed text-ink/85">
+              <p className="mt-5 max-w-lg break-keep text-base leading-relaxed text-ink/85">
                 객체 탐지와 시계열 데이터 분석부터 백엔드 시스템 설계까지, 실제 데이터를 다루며
                 얻은 경험을 바탕으로 문제를 해결합니다. 새로운 프로젝트를 처음부터 만드는 것뿐
                 아니라, 기존 시스템의 구조를 분석하고 요구사항에 맞게 개선하는 작업도 익숙합니다.
@@ -124,7 +124,7 @@ export default function Home() {
         <section id="contact" className="border-t border-line">
           <div className="mx-auto max-w-4xl px-6 py-16 md:py-24">
             <h2 className="text-xl font-semibold tracking-tight">Contact</h2>
-            <p className="mt-4 max-w-md text-base leading-relaxed text-muted">
+            <p className="mt-4 max-w-md break-keep text-base leading-relaxed text-muted">
               새로운 문제나 협업 제안이 있다면 편하게 연락 주세요.
             </p>
             <div className="mt-8 flex flex-col gap-3 text-base sm:flex-row sm:gap-8">
