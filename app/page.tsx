@@ -7,9 +7,12 @@ const skillGroups = [
     title: "AI / ML",
     items: ["Python", "PyTorch", "TensorFlow", "YOLO", "OpenCV", "Scikit-learn", "LLM"],
   },
-  { title: "Backend", items: ["Python", "Java", "Django", "FastAPI", "REST API"] },
+  {
+    title: "Backend",
+    items: ["Python", "Java", "C", "C++", "Django", "FastAPI", "Node.js", "REST API"],
+  },
   { title: "Database", items: ["MySQL", "PostgreSQL", "SQLite", "SQL"] },
-  { title: "Frontend", items: ["React", "JavaScript", "HTML", "CSS"] },
+  { title: "Frontend", items: ["React", "Next.js", "TypeScript", "JavaScript", "HTML", "CSS"] },
   { title: "DevOps / Tools", items: ["Docker", "Git", "GitHub", "Linux"] },
 ];
 
