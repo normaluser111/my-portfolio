@@ -67,11 +67,20 @@ export default function Home() {
           <div className="mx-auto grid max-w-4xl gap-10 px-6 py-16 md:grid-cols-[1.2fr_1fr] md:py-20">
             <div>
               <h2 className="text-xl font-semibold tracking-tight">About</h2>
-              <p className="mt-5 max-w-lg break-keep text-base leading-relaxed text-ink/85">
-                객체 탐지와 시계열 데이터 분석부터 백엔드 시스템 설계까지, 실제 데이터를 다루며
-                얻은 경험을 바탕으로 문제를 해결합니다. 새로운 프로젝트를 처음부터 만드는 것뿐
-                아니라, 기존 시스템의 구조를 분석하고 요구사항에 맞게 개선하는 작업도 익숙합니다.
-              </p>
+              <div className="mt-5 max-w-lg space-y-4">
+                <p className="break-keep text-base leading-relaxed text-ink/85">
+                  주어진 조건이 이상적이지 않아도, 해결할 방법을 찾는 AI·Backend 개발자입니다.
+                  데이터가 부족하거나 요구사항이 복잡한 상황에서도 완벽한 환경을 기다리기보다,
+                  현재 가진 데이터와 기술로 가능한 해결 방법부터 찾습니다. 문제를 해결할 때
+                  하나의 기술에만 의존하지 않고, 다양한 모델과 접근 방법을 탐색한 뒤 직접
+                  실험하고 결과를 비교하며 적합한 방법을 찾아갑니다.
+                </p>
+                <p className="break-keep text-base leading-relaxed text-ink/85">
+                  서로 다른 요구사항을 조율하고 협업 과정을 정리해 팀이 같은 목표를 바라볼 수
+                  있도록 만드는 과정도 중요하게 생각합니다. 혼자 문제를 해결하는 데서 그치지
+                  않고, 기술과 협업을 연결해 더 나은 결과를 만들어내는 개발자를 지향합니다.
+                </p>
+              </div>
             </div>
             <dl className="divide-y divide-line self-start border border-line">
               {facts.map((fact) => (
