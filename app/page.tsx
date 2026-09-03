@@ -126,18 +126,18 @@ export default function Home() {
             </p>
             <div className="mt-8 flex flex-col gap-3 text-base sm:flex-row sm:gap-8">
               <a
-                href="mailto:your-email@example.com"
+                href="mailto:js6088@naver.com"
                 className="font-medium underline decoration-line underline-offset-4 transition-colors hover:decoration-ink"
               >
-                your-email@example.com
+                js6088@naver.com
               </a>
               <a
-                href="https://github.com/your-id"
+                href="https://github.com/normaluser111"
                 target="_blank"
                 rel="noreferrer"
                 className="font-medium underline decoration-line underline-offset-4 transition-colors hover:decoration-ink"
               >
-                github.com/your-id
+                github.com/normaluser111
               </a>
             </div>
           </div>
